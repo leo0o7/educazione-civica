@@ -1,11 +1,11 @@
 "use client";
 
 import { GeminiHero } from "@/components/geminiPage";
-import IndexCard from "@/components/cards/indexCard";
 import Paragraph from "@/components/paragraph";
 import React from "react";
 import { TracingBeam } from "./ui/tracing-beam";
 import useWindowDimensions from "@/useWindowDimensions";
+import BorderCard from "@/components/borderCard";
 
 interface PageText {
   title: string;
@@ -36,11 +36,11 @@ export default function InfoPage({
     <>
       <GeminiHero title={title} description={description} />
       <div className={`grid ${cols}  max-w-[100vw] mb-20`}>
-        <IndexCard title="" />
+        <BorderCard title="" />
         {indexes.map((index, idx) => (
-          <IndexCard title={index} key={idx} />
+          <BorderCard title={index} key={idx} />
         ))}
-        <IndexCard title="" />
+        <BorderCard title="" />
       </div>
       <TracingBeam>
         <div className="px-8 mt-40 [&>*:last-child]:pb-40">

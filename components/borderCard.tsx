@@ -1,12 +1,12 @@
 import { cn } from "@/lib/utils";
-import { Card, CardHeader, CardTitle } from "../ui/card";
+import { Card, CardHeader, CardTitle } from "./ui/card";
 
 interface InfoCardProps {
   title: string;
   className?: string;
 }
 
-export default function IndexCard({ title, className }: InfoCardProps) {
+export default function BorderCard({ title, className }: InfoCardProps) {
   return (
     <Card
       className={cn(

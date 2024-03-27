@@ -1,10 +1,10 @@
 "use client";
 
 import useWindowDimensions from "@/useWindowDimensions";
-import IndexCard from "./cards/indexCard";
 
 import { TypewriterEffect } from "./ui/typewriter-effect";
 import { usePathname } from "next/navigation";
+import BorderCard from "./borderCard";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -39,18 +39,18 @@ export default function Footer() {
       <TypewriterEffect words={words} />
 
       <div className={`grid ${cols[0]} max-w-[100vw] mt-8`}>
-        <IndexCard title="" />
+        <BorderCard title="" />
 
-        <IndexCard title="Federico Bianchi" />
-        <IndexCard title="Gabriele Palumbo" />
-        <IndexCard title="Leonardo Giardino" />
-        <IndexCard title="" />
+        <BorderCard title="Federico Bianchi" />
+        <BorderCard title="Gabriele Palumbo" />
+        <BorderCard title="Leonardo Giardino" />
+        <BorderCard title="" />
       </div>
       <div className={`grid ${cols[1]} max-w-[100vw] mb-40`}>
-        <IndexCard title="" />
-        <IndexCard title="Gabriele Petrella" className="" />
-        <IndexCard title="Daniele Toppi" />
-        <IndexCard title="" />
+        <BorderCard title="" />
+        <BorderCard title="Gabriele Petrella" className="" />
+        <BorderCard title="Daniele Toppi" />
+        <BorderCard title="" />
       </div>
     </div>
   );

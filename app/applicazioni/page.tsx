@@ -5,6 +5,7 @@ export default function Page() {
     <>
       <InfoPage
         title="Applicazioni e futuro del Machine Learnig"
+        description="L''intelligenza artificiale (IA) ha rivoluzionato settori come ricerca online, assistenti virtuali e medicina, ma il futuro del machine learning dipende da progressi scientifici, tecnologici ed etici. "
         indexes={["Applicazioni", "Futuro"]}
         text={[
           {
